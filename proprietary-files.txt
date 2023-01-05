@@ -1,0 +1,16 @@
+# Stock package version: Sony/F5121/F5121:8.0.0/34.4.A.0.364/2371171945:user/release-keys
+
+# Audio Calib
+vendor/etc/acdbdata/Bluetooth_cal.acdb
+vendor/etc/acdbdata/General_cal.acdb
+vendor/etc/acdbdata/Global_cal.acdb
+vendor/etc/acdbdata/Handset_cal.acdb
+vendor/etc/acdbdata/Hdmi_cal.acdb
+vendor/etc/acdbdata/Headset_cal.acdb
+vendor/etc/acdbdata/Speaker_cal.acdb
+
+# BT FW
+vendor/firmware/BCM4345C0.hcd
+
+# WiFi FW
+vendor/firmware/bcmdhd.cal
