@@ -12,8 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Device path
+# Device Tree Path
 DEVICE_PATH := device/sony/suzu
+
+# QCom Specific
+PRODUCT_BOARD_PLATFORM := msm8956
+PRODUCT_USES_QCOM_HARDWARE := true
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -65,5 +69,5 @@ PRODUCT_COPY_FILES += \
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/loire/loire.mk)
 
-# include board vendor blobs
+# Include board vendor blobs IF they exist.
 $(call inherit-product-if-exists, vendor/sony/loire/suzu/suzu-vendor.mk)

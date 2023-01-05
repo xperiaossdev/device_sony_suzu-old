@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_suzu.mk
+    $(LOCAL_DIR)/spark_suzu.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_suzu-eng \
-    aosp_suzu-user \
-    aosp_suzu-userdebug
+    spark_suzu-user \
+    spark_suzu-userdebug \
+    spark_suzu-eng
