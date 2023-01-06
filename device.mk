@@ -51,16 +51,12 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480 \
+    ro.sf.lcd_density=440 \
     ro.usb.pid_suffix=1E0
 
 # Sensors
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
-
-# Telephony Packages (AOSP)
-PRODUCT_PACKAGES += \
-    InCallUI
 
 # Thermal Configuration
 PRODUCT_COPY_FILES += \
