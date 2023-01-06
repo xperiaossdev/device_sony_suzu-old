@@ -36,6 +36,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Un|Official Status
 SPARK_BUILD_TYPE := UNOFFICIAL
 
+# Export with|out GApps
+WITH_GAPPS := true
+
 # Boot Animation Resolution
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
