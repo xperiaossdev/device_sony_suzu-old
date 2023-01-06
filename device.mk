@@ -15,10 +15,6 @@
 # Device Tree Path
 DEVICE_PATH := device/sony/suzu
 
-# QCom Specific
-PRODUCT_BOARD_PLATFORM := msm8956
-PRODUCT_USES_QCOM_HARDWARE := true
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
