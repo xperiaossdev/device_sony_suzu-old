@@ -22,22 +22,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Spark stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Environment Flags
 IS_PHONE := true
 TARGET_USES_BLUR := false
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.spark.maintainer=
+    ro.cherish.maintainer=
 
 # Un|Official Status
-SPARK_BUILD_TYPE := UNOFFICIAL
+CHERISH_BUILD_TYPE=UNOFFICIAL
 
-# Export with|out GApps
-WITH_GAPPS := true
+# GApps
+TARGET_GAPPS_ARCH := arm64
+TARGET_USES_MINI_GAPPS := true
 
 # Boot Animation Resolution
 TARGET_SCREEN_HEIGHT := 1920
@@ -45,10 +48,10 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Charging Animation
-TARGET_INCLUDE_PIXEL_CHARGER := true
+USE_PIXEL_CHARGING := true
 
 # Device Identifiers
-PRODUCT_NAME := spark_suzu
+PRODUCT_NAME := cherish_suzu
 PRODUCT_DEVICE := suzu
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony

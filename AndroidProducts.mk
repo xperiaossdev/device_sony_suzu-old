@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_suzu.mk
+    $(LOCAL_DIR)/cherish_suzu.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_suzu-user \
-    spark_suzu-userdebug \
-    spark_suzu-eng
+    cherish_suzu-user \
+    cherish_suzu-userdebug \
+    cherish_suzu-eng
