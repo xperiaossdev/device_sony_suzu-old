@@ -22,39 +22,31 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common xdroidOSS stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Environment Flags
 IS_PHONE := true
-TARGET_USES_BLUR := false
-TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_CARRIER_SETTINGS := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=
-
-# Un|Official Status
-CHERISH_BUILD_TYPE=UNOFFICIAL
-
-# GApps
-TARGET_GAPPS_ARCH := arm64
-TARGET_USES_MINI_GAPPS := true
 
 # Boot Animation Resolution
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
-TARGET_BOOT_ANIMATION_RES := 1080
 
-# Charging Animation
-USE_PIXEL_CHARGING := true
+# XDroid
+XDROID_BOOT := 1080
+XDROID_MAINTAINER :=
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device Identifiers
-PRODUCT_NAME := cherish_suzu
+PRODUCT_NAME := xdroid_suzu
 PRODUCT_DEVICE := suzu
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
+PRODUCT_PLATFORM := msm8956
 PRODUCT_MODEL := Xperia X
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

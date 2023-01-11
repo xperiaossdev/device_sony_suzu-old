@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_suzu.mk
+    $(LOCAL_DIR)/xdroid_suzu.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_suzu-user \
-    cherish_suzu-userdebug \
-    cherish_suzu-eng
+    xdroid_suzu-user \
+    xdroid_suzu-userdebug \
+    xdroid_suzu-eng
